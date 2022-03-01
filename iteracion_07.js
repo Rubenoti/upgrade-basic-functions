@@ -11,7 +11,12 @@ const nameFinder = [
     'Jessica',
     'Marc'
 ];
-function finderName(param) {
+function finderName(param, valor) {
 
+    for (let i = 0; i < param.length; i++) {
+        if (valor === param[i]) {
+            return true;
+        } else { return false; }
+    }
 }
-console.log(finderName(nameFinder));
+console.log(finderName(nameFinder, "Peter"));
